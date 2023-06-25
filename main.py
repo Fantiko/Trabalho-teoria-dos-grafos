@@ -49,12 +49,11 @@ def contagem(matriz, numero_pessoas):
     return len(familias), familias
 
 
-def escreveoutput(quantidade, tamanhos = []):
+def escreveoutput(quantidade, tamanhos=[]):
     with open("output.txt", "w") as f:
         f.write(quantidade.__str__() + "\n")
         for elemento in tamanhos:
             f.write(str(elemento) + " ")
-
 
 
 def main():
